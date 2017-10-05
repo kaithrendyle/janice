@@ -1,0 +1,630 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/*****End Scrolling Nav**********/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #1C1F2D;
+}
+
+
+.container, .container-fluid {
+ /* max-width: 1200px;*/
+ margin: 0 auto;
+  padding: 0;
+}
+a {
+  cursor: pointer;
+}
+a:visited, a:active,  {
+  color: #FFF;
+}
+
+b {
+  font-weight: 300;
+}
+
+.classes p, .services p {
+  margin: 0 1em;
+}
+
+.col-md-4 {
+  /*padding-right: 0;*/
+}
+
+/**********Nav***********/
+.navbar {
+    text-align: center;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    border: none;
+    margin: 0;
+    height: 30px;
+
+}
+.navbar-default {
+  background-color: rgba(153,147,191,0.5);
+}
+
+.navbar .navbar-nav {
+  float: none;
+  /*display: inline-block;*/
+  background-color: rgba(153,147,191,0.5);
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav li {
+    /*display: inline-block;*/
+    margin: 0;
+
+}
+.nav a {
+    color: #FFF !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+.nav a:hover {
+    background-color: #73648A !important;
+    transition: background .5s;
+}
+/* Hover for collapsed menu on small screens */
+
+nav li a:hover {
+    background-color: #73648A !important;
+    transition: background .5s;
+}
+.nav li a:focus {
+    background-color: #73648A !important;
+    transition: background .5s;
+}
+.navbar .active {
+    background-color: #73648A !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #73648A;
+}
+/*collapsed nav button*/
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #f1f4fa;
+}
+
+.glyphicon-menu-down {
+  color: #FFF;
+  font-size: 3em;
+  position: relative;
+  margin-top: 10%;
+}
+.down-arrow {
+  cursor: pointer;
+}
+/**************MAIN**************/
+
+.main{
+    background: linear-gradient(#9993BF, transparent 95%),
+                linear-gradient(0deg, #fff, transparent 95%),
+                url(../img/sunset-lake-opt.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    height: 700px;
+    text-align: center;
+    color: #fff;
+
+}
+.main h1 {
+    font-size: 3.5em;
+    font-family: 'Pacifico', cursive;
+    padding: 200px 0 10px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+}
+.main h2 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.row {
+  width: 100%;
+}
+
+/***********About***********/
+.janice-sm {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+
+}
+
+ .no-pad {
+   padding: 0;
+   margin: 0;
+ }
+.about p {
+
+    text-align: left;
+    font-size: 1.286em;
+    margin: 1em 1em;
+}
+
+
+ .about p + p {
+    text-indent: 2em;
+  }
+
+.about {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+
+/***********Services**********/
+
+.services {
+  background-color: #f1f4fa;
+  text-align: center;
+}
+.well {
+  max-width: 340px;
+  margin: 0 auto 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  background: rgba(255,255,255,1);
+  padding: 0;
+}
+
+.services img {
+  height: auto;
+  /*width: 280px;*/
+  width: 100%;
+  margin: 10px auto 0;
+  border-radius: 5px 5px 0 0;
+}
+
+ .about h2, .services h2, .classes h2, .photos h2, .contact h2 {
+  font-family: 'Pacifico', cursive;
+  display: block;
+  margin: 60px 0 20px;
+  color: #1C1F2D;
+  /*font-weight: bold;*/
+  text-align: center;
+}
+.services h3 {
+  font-size: 1.5em;
+}
+.services hr {
+  width: 50px;
+}
+
+.services p, .classes p {
+  font-size: 1.286em;
+
+}
+.services-intro {
+  padding-bottom: 20px;
+}
+
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  background-color: #9993BF;
+  color: #FFF;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 20px 0;
+
+}
+.btn:hover, .btn:active {
+  color: #FFF;
+  background-color: #73648A;
+}
+
+.disclaimer {
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.disclaimer p {
+  padding-bottom: 0;
+  font-size: 1em;
+}
+/*modal*/
+
+.modal .form-group {
+  position: relative;
+}
+.modal input {
+  padding-left: 7%;
+}
+textarea {
+  border-radius: 4px;
+
+}
+/*.glyphicon {
+  position: absolute;
+  top: 29.411765%;
+  left: 2%;
+  color: #404444;
+}*/
+
+
+/*********classes************/
+
+.classes {
+  text-align: left;
+}
+.classes .row {
+  margin: 0;
+  padding: 0;
+}
+.classes .col-sm-6 {
+  padding: 0;
+}
+.classes p {
+
+}
+.panel-title {
+  font-size: 1em;
+}
+.calendar {
+  width: 75px;
+  height: auto;
+  margin: 0 20px;
+}
+
+#accordion {
+  margin: 50px 20px;
+}
+
+.panel-default>.panel-heading {
+  background-color: #E8EDF8;
+}
+.panel-group .panel {
+  border-radius: 5px;
+}
+.panel-heading {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#date {
+  color: #9558AF;
+}
+/**********photos***********/
+.photos h2 {
+  padding: 60px 0 20px;
+  margin: 0;
+}
+.photos {
+  background-color: #f1f4fa;
+  text-align: center;
+  padding: 0 0 50px;
+}
+
+.carousel {
+  width: 100% !important;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+/***********contact***********/
+.contact {
+ height: 700px;
+
+}
+.contact .container-fluid {
+  background-color: #f1f4fa;
+}
+.contact p, i, .contact a {
+  font-size: 1.286em;
+}
+address {
+  margin-bottom: 0;
+}
+.contact h2 {
+  margin-top: 0;
+  padding-top: 30px;
+}
+.contact h3 {
+  text-align: center;
+  font-size: 1.286em;
+  padding: 0 50px;
+}
+.contact h4 {
+  font-weight: bold;
+}
+
+.contact-info {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+.contact li {
+  padding: 5px 0;
+}
+.contact a {
+  padding-bottom: 8px;
+  color: #1C1F2D;
+  text-decoration: none;
+  display: block;
+}
+
+.contact-info a:hover {
+  color: #73648A;
+}
+
+.info {
+  margin: 90px auto 90px;
+  padding: 5px 0;
+
+}
+#map {
+  display: none;
+}
+#developer {
+  font-size: 1em;
+  color: #1C1F2D;
+  text-align: center;
+}
+#developer a {
+  font-size: 1em;
+  display: inline;
+  color: #9993BF;
+}
+/*Social icons*/
+
+@font-face {
+    font-family: 'si';
+    src: url('PATH_TO/socicon.eot');
+    src: url('../socicons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../socicons/socicon.woff') format('woff'),
+         url('../socicons/socicon.ttf') format('truetype'),
+         url('../socicons/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin: 30px 0 30px 0;
+    padding:0;
+    list-style:none;
+    text-align: center;
+
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 27px;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    border-radius: 48px;
+    margin: 0 10px;
+    color: #ffffff;
+    background-color: #73648A;
+}
+.soc a:hover {
+  background-color: #9993BF;
+}
+.soc-linkedin:before {
+    content:'j';
+}
+
+.soc-skype:before {
+    content:'g';
+}
+.soc-facebook:before {
+    content:'b';
+}
+
+
+
+/*******MEDIA QUERIES*************/
+
+
+
+@media (min-width: 768px) {
+  .main h1 {
+    font-size: 6.854em;
+    padding: 200px 0 10px;
+  }
+  .main h2 {
+      font-size: 1.5em;
+  }
+  h2 {
+    font-size: 2.618em;
+  }
+  .about h2 {
+    padding-top: 50px;
+  }
+  .about p {
+    padding: 0 30px;
+  }
+
+  .navbar .navbar-nav {
+    background-color: transparent;
+    display: inline-block;
+  }
+
+  .janice-sm {
+    display: none;
+  }
+  #aboutSection {
+    background:  url(../img/janice-opt-white.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 700px;
+  }
+
+  #classesSection {
+    background: url(../img/lake-path-white.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 700px;
+  }
+  .calendar {
+    margin: 0;
+  }
+
+  .carousel {
+    width: 65% !important;
+  }
+  .contact, .contact .container-fluid {
+    height: 700px;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+  #map {
+    width: 100%;
+    height: 50%;
+    display: inline;
+    position: absolute;
+    right: 0;
+    height: 700px;
+    width: 50%;
+    z-index: 100;
+  }
+
+}
+/*contact section background hack*/
+@media screen and (min-width : 800px) {
+  .info {
+      width: 400px;
+      position: relative;
+      border-radius: 5px;
+      z-index: 100;
+      background-color: #f1f4fa;
+  }
+  .contact .container-fluid {
+      background-color: #9993BF;
+  }
+
+}
+
+@media screen and (min-width : 940px) {
+.main h1 {
+
+}
+h2 {
+
+}
+p {
+  font-size: 1.414em;
+}
+}
+@media screen and (min-width : 1400px) {
+  .main {
+    height: 1000px;
+  }
+  .main .row {
+    padding-top: 150px;
+  }
+  .photos .carousel {
+    width: 100% !important;
+  }
+  .about, .classes, .photos {
+    padding: 50px 0;
+  }
+  .contact {
+    padding: 150px;
+  }
+  .about p, .services p, .classes p, .photos p, .contact p {
+
+  }
+  .classes h2, .photos h2, .contact h2 {
+    padding-bottom: 50px;
+  }
+  .classes img {
+    padding-bottom: 50px;
+  }
+  .calendar {
+    width: 100px;
+  }
+}
