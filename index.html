@@ -37,6 +37,7 @@
                     <li class="active"><a id="home" href="#page-top" class="page-scroll">home</a></li>
                     <li><a id="about" href="#aboutSection" class="page-scroll">my story</a></li>
                     <li><a id="services" href="#servicesSection" class="page-scroll">services</a></li>
+                    <li><a id="classes" href="#clientsSection" class="page-scroll">clients</a></li>
                     <li><a id="classes" href="#classesSection" class="page-scroll">classes</a></li>
                     <li><a id="photos" href="#photosSection" class="page-scroll">photos</a></li>
                     <li><a id="contact" href="#contactSection" class="page-scroll">contact</a></li>
@@ -86,14 +87,9 @@
                     <p> I am so excited and grateful to be well and happy. I am now
                     giving sessions and facilitating classes. Please contact me if this has
                     sparked your interest.</p>
-                    <a href="http://www.accessconsciousness.com/facs_list.asp"><img class="hidden-xs img-responsive badge" src="./img/facilitator.jpg" id="facilitator" alt="Access Consciousness facilitator badge"/></a>
 
             </div>
           </div>
-
-
-
-
 
         </div>
     </div>
@@ -151,14 +147,13 @@
             </div>
             <div class="col-md-4">
               <div class="well">
-
-              <img class="img-responsive"src="./img/correcting-vision-crop.jpg"alt="Access Consciousness Correcting vision being performed by Janice Wilhelm"/>
+                <img class="img-responsive"src="./img/correcting-vision-crop.jpg"alt="Access Consciousness Correcting vision being performed by Janice Wilhelm"/>
                 <h3>Access Correcting Vision</h3>
                 <hr/>
-                  <p>Access Correcting Vision is a soft touch, hands on body process activating over 15 healing energies in the eyes and body and helps release judgements about vision and aging. Recipients have been known to not need readers after multiple sessions.</p>
-                  <a class="btn" href="mailto: janicefifty@gmail.com">learn more</a>
+                <p>Access Correcting Vision is a soft touch, hands on body process activating over 15 healing energies in the eyes and body and helps release judgements about vision and aging. Recipients have been known to not need readers after multiple sessions.</p>
+                <a class="btn" href="mailto: janicefifty@gmail.com">learn more</a>
+              </div>
             </div>
-          </div>
 
         </div>
       </div>
@@ -168,13 +163,54 @@
         </div>
       </div>
     </div> <!-- end section -->
+    <div id="clientsSection" class="clients">
+      <div class="container">
+        <h2>What Clients are Saying</h2>
+        <div id="myTextCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myTextCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myTextCarousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="carousel-background"></div>
+          <div class="carousel-cptn">
+            <span class="quote-mark quote-left">&#8220;</span>
+            <p>Janice assists me in changin many aspects of my life through Access Bars, After each session with Janice, I feel more and more peaceful in my body and mind. I am learning to be comfortable in my own skin. I highly recommend her services.</p>
+            <span class="quote-mark quote-right">&#8221;</span>
+            <p class="testimonial-name">-Joan</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-background"></div>
+          <div class="carousel-cptn">
+            <span class="quote-mark quote-left">&#8220;</span>
+            <p>I absolutely the intuitive bards session with Janice. The bars in itself is an incredible treatment but adding Janice's specialty of guided intuition is an added bonus! I drive a long way to come to Janice but I wouldn't have it any other way. I've had a lot of energy work done over the years but nothing had come close to the results I have with her treatments. She's so bang on and it makes the session worth its weight in gold. In fact, she should be charging a lot more!</p>
+            <p class="testimonial-name">- L. Stamper</p>
+            <span class="quote-mark quote-right">&#8221;</span>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myTextCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myTextCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
 
+
+      </div>
+    </div>
 
     <div id="classesSection" class="classes">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-              <h2>Classes</h2>
+            <h2>Classes</h2>
           </div>
         </div>
         <div class="row">
@@ -305,11 +341,13 @@
               </div>
             </div>
 
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-              <span class="icon-prev"></span>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">
-              <span class="icon-next"></span>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
             </a>
           </div>
 
@@ -413,42 +451,54 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 
 
-<!-- <script src="js/jquery.js"></script> -->
-
-<script src="js/bootstrap.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/scrolling-nav.js"></script>
-
+<script src="js/touchswipe.min.js"></script>
+<script src="js/bootstrap.js"></script>
 
 <script>
 
 /* Easy scrolling from down arrow to next section */
 
 $(document).ready(function() {
-function filterPath(string) {
-return string
-.replace(/^\//,'')
-.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-.replace(/\/$/,'');
-}
-var locationPath = filterPath(location.pathname);
-$('a[href*=#aboutSection]').each(function() {
-var thisPath = filterPath(this.pathname) || locationPath;
-if (  locationPath == thisPath
-&& (location.hostname == this.hostname || !this.hostname)
-&& this.hash.replace(/#/,'') ) {
-  var $target = $(this.hash), target = this.hash;
-  if (target) {
-    var targetOffset = $target.offset().top;
-    $(this).click(function(event) {
-      event.preventDefault();
-      $('html, body').animate({scrollTop: targetOffset}, 400, function() {
-        location.hash = target;
-      });
-    });
+  function filterPath(string) {
+  return string
+  .replace(/^\//,'')
+  .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+  .replace(/\/$/,'');
   }
-}
-});
+  var locationPath = filterPath(location.pathname);
+  $('a[href*=#aboutSection]').each(function() {
+  var thisPath = filterPath(this.pathname) || locationPath;
+  if (  locationPath == thisPath
+  && (location.hostname == this.hostname || !this.hostname)
+  && this.hash.replace(/#/,'') ) {
+    var $target = $(this.hash), target = this.hash;
+    if (target) {
+      var targetOffset = $target.offset().top;
+      $(this).click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: targetOffset}, 400, function() {
+          location.hash = target;
+        });
+      });
+    }
+  }
+  });
+
+  //swipe functionality for carousels
+  $(".carousel-inner").swipe( {
+						//Generic swipe handler for all directions
+						swipeLeft:function(event, direction, distance, duration, fingerCount) {
+							$(this).parent().carousel('prev');
+						},
+						swipeRight: function() {
+							$(this).parent().carousel('next');
+						},
+						//Default is 75px, set to 0 for demo so any distance triggers swipe
+						threshold:0
+					});
+
 });
 
     // Map
@@ -470,6 +520,12 @@ if (  locationPath == thisPath
       });
 
     }
+
+
+
+
+
+
 </script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3pkMhho6PGq9pZFHOuste9oRuoeq7Wp4&callback=initMap">
