@@ -408,7 +408,9 @@ textarea {
   width: 100% !important;
   margin-right: auto;
   margin-left: auto;
-
+}
+.carousel img {
+    border-radius: 5px;
 }
 
 /***********contact***********/
